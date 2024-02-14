@@ -11,20 +11,27 @@ import androidx.tv.material3.lightColorScheme
 @OptIn(ExperimentalTvMaterial3Api::class)
 @Composable
 fun FirstTryTVTheme(
-        isInDarkTheme: Boolean = isSystemInDarkTheme(),
-        content: @Composable () -> Unit,
+    isInDarkTheme: Boolean = isSystemInDarkTheme(),
+    content: @Composable () -> Unit,
 ) {
     val colorScheme = if (isInDarkTheme) {
         darkColorScheme(
-                primary = Purple80,
-                secondary = PurpleGrey80,
-                tertiary = Pink80
+            primary = Purple80,
+            secondary = PurpleGrey80,
+            tertiary = Pink80,
+            background = background,
+            onBackground = onBackground,
+            onSurface = onSurface,
+            inverseOnSurface = inverseOnSurface,
         )
     } else {
         lightColorScheme(
-                primary = Purple40,
-                secondary = PurpleGrey40,
-                tertiary = Pink40
+            primary = Purple40,
+            secondary = PurpleGrey40,
+            tertiary = Pink40,
+            background = background,
+            onBackground = onBackground,            onSurface = onSurface,
+            inverseOnSurface = inverseOnSurface,
         )
     }
     CompositionLocalProvider(
