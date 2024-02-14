@@ -2,6 +2,7 @@ package com.example.firsttrytv.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.tv.material3.ExperimentalTvMaterial3Api
 import androidx.tv.material3.MaterialTheme
 import androidx.tv.material3.darkColorScheme
@@ -26,9 +27,13 @@ fun FirstTryTVTheme(
                 tertiary = Pink40
         )
     }
-    MaterialTheme(
+    CompositionLocalProvider(
+        localDimens provides MaterialTheme.dimens
+    ) {
+        MaterialTheme(
             colorScheme = colorScheme,
             typography = Typography,
             content = content
-    )
+        )
+    }
 }
