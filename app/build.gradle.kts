@@ -61,7 +61,11 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
     // leanback
-    val LEANBACK_VERSION = "1.2.0-alpha04"
-    implementation("androidx.leanback:leanback:$LEANBACK_VERSION")
-    implementation("androidx.leanback:leanback-preference:$LEANBACK_VERSION")
+    val leanbackVersion = "1.2.0-alpha04"
+    implementation("androidx.leanback:leanback:$leanbackVersion")
+    implementation("androidx.leanback:leanback-preference:$leanbackVersion")
+
+    // navigation
+    val navigationVersion = "2.7.7"
+    implementation("androidx.navigation:navigation-compose:$navigationVersion")
 }
