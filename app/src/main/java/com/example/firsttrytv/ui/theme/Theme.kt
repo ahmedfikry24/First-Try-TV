@@ -30,7 +30,8 @@ fun FirstTryTVTheme(
             secondary = PurpleGrey40,
             tertiary = Pink40,
             background = background,
-            onBackground = onBackground,            onSurface = onSurface,
+            onBackground = onBackground,
+            onSurface = onSurface,
             inverseOnSurface = inverseOnSurface,
         )
     }

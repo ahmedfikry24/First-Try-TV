@@ -11,13 +11,16 @@ import androidx.tv.material3.MaterialTheme
 data class Dimens(
     val corner4 :Dp = 4.dp,
 
+    val size2: Dp = 2.dp,
     val size6: Dp = 6.dp,
+    val size8: Dp = 8.dp,
     val size16: Dp = 16.dp,
     val size20: Dp = 20.dp,
     val size24: Dp = 24.dp,
     val size32: Dp = 32.dp,
     val size40: Dp = 40.dp,
     val size48: Dp = 48.dp,
+    val size58: Dp = 58.dp,
     val size72: Dp = 72.dp,
 )
 
