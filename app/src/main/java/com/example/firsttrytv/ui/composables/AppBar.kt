@@ -3,6 +3,7 @@ package com.example.firsttrytv.ui.composables
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -16,7 +17,12 @@ import com.example.firsttrytv.ui.theme.dimens
 
 @Composable
 fun AppBar() {
-    Row(verticalAlignment = Alignment.CenterVertically) {
+    Row(
+        modifier = Modifier
+            .padding(horizontal = MaterialTheme.dimens.size58)
+            .padding(vertical = MaterialTheme.dimens.size32),
+        verticalAlignment = Alignment.CenterVertically
+    ) {
         Image(painter = painterResource(R.drawable.ic_profile), contentDescription = null)
         Spacer(modifier = Modifier.width(MaterialTheme.dimens.size20))
         AppBarOptions(text = "Home", isSelected = true)
