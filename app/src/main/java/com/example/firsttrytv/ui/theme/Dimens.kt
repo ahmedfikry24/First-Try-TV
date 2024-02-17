@@ -9,9 +9,10 @@ import androidx.tv.material3.MaterialTheme
 
 @Immutable
 data class Dimens(
-    val corner4 :Dp = 4.dp,
+    val corner4: Dp = 4.dp,
 
     val size2: Dp = 2.dp,
+    val size4: Dp = 4.dp,
     val size6: Dp = 6.dp,
     val size8: Dp = 8.dp,
     val size16: Dp = 16.dp,
@@ -22,6 +23,8 @@ data class Dimens(
     val size48: Dp = 48.dp,
     val size58: Dp = 58.dp,
     val size72: Dp = 72.dp,
+    val size153: Dp = 153.dp,
+    val size231: Dp = 231.dp,
 )
 
 val localDimens = compositionLocalOf { Dimens() }
