@@ -22,8 +22,7 @@ import com.example.firsttrytv.ui.theme.dimens
 fun AppBar() {
     Row(
         modifier = Modifier
-            .padding(horizontal = MaterialTheme.dimens.size58)
-            .padding(vertical = MaterialTheme.dimens.size32),
+            .padding(horizontal = MaterialTheme.dimens.size58),
         verticalAlignment = Alignment.CenterVertically
     ) {
         Image(
